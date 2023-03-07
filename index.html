@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Catery</title>
+</head>
+<body>
+    <div class="favorite">
+        <div class="favorite__icon">
+            <svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.875 0.5H13.125C14.1406 0.5 15 1.35938 15 2.375V19.5625C15 20.1094 14.5703 20.5 14.0234 20.5C13.8281 20.5 13.6328 20.4609 13.4766 20.3438L7.5 16.125L1.48438 20.3438C1.32812 20.4609 1.13281 20.5 0.9375 20.5C0.390625 20.5 0 20.1094 0 19.5625V2.375C0 1.35938 0.820312 0.5 1.875 0.5Z" fill="#D02035"/>
+            </svg>                
+        </div>
+        <div class="favorite__quantity">
+            2
+        </div>
+    </div>
+    <div class="hidden">
+        <div class="hidden__close">
+           <div class="hidden__close-item"></div>
+           <div class="hidden__close-item"></div>
+        </div>
+        <ul class="hidden__menu">
+           <li>
+            <a href="#" class="hidden__link">
+                Рестораны на карте
+            </a>
+        </li>
+        <li>
+            <a href="#" class="hidden__link">
+                Все рестораны
+            </a>
+        </li>
+        <li>
+            <a href="#" class="hidden__link">
+                Лучшие предложения
+            </a>
+        </li>
+        </ul>
+    </div>
+    <div class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar__content">
+                <a href="index.html#header" class="navbar__logo-wrapper">
+                    <img src="img/logo.svg" alt="SPD" class="navbar__logo">
+                    <div class="navbar__current-lang">
+                        lv
+                    </div>
+                </a>
+                <div class="navbar__search">
+                    <input type="text" class="navbar__search_input" placeholder="Поиск лучшего места для мероприятия">
+                    <img src="img/search-icon.svg" alt="search" class="navbar__search_icon">
+                </div>
+                <ul class="navbar__menu">
+                    <li>
+                        <a href="#" class="navbar__link">
+                            Рестораны на карте
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar__link">
+                            Все рестораны
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar__link">
+                            Лучшие предложения
+                        </a>
+                    </li>
+                </ul>
+                <div class="navbar__language">
+                    <img src="img/lv.svg" alt="lv">
+                    <div class="navbar__language_text">
+                        Lv
+                    </div>
+                </div>
+                <button class="navbar__btn">
+                    <img src="img/add-icon.svg" alt="add">
+                    Добавить заведение
+                </button>
+                <div class="navbar__burger">
+                    <div class="navbar__burger-item"></div>
+                    <div class="navbar__burger-item"></div>
+                    <div class="navbar__burger-item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__col col-4">
+                    <div class="header__card">
+                        <img src="img/restaurant-1.png" alt="restaurant" class="header__img">
+                        <div class="header__logo_wrapper">
+                            <img src="img/logo-pallazio.png" alt="logo" class="header__logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="header__col col-8">
+                    <div class="header__row">
+                        <div class="header__col col-6">
+                            <div class="header__card">
+                                <img src="img/restaurant-2.png" alt="restaurant" class="header__img">
+                                <div class="header__logo_wrapper">
+                                    <img src="img/logo-cookbook.png" alt="logo" class="header__logo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__col col-6">
+                            <div class="header__card">
+                                <img src="img/restaurant-3.png" alt="restaurant" class="header__img">
+                                <div class="header__logo_wrapper">
+                                    <img src="img/logo-juliana.png" alt="logo" class="header__logo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__col col-12">
+                            <div class="header__card">
+                                <img src="img/restaurant-4.png" alt="restaurant" class="header__img">
+                                <div class="header__logo_wrapper">
+                                    <img src="img/logo-redtomato.png" alt="logo" class="header__logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="places" id="places">
+        <div class="container">
+            <div class="places__categories">
+                <h2 class="places__category">
+                    Семейный <span>73</span>
+                </h2>
+                <h2 class="places__category">
+                    Бар <span>29</span> 
+                </h2>
+                <h2 class="places__category">
+                    Клубный <span>18</span> 
+                </h2>
+            </div>
+            <div class="places__filters">
+
+            </div>
+            <div class="places__wrap">
+                <div class="card">
+                    <div class="card__content">
+                        <img src="img/rest-1.png" alt="restaurant" class="card__img">
+                        <div class="card__name">
+                            Петергайлис
+                        </div>
+                        <div class="card__people">
+                            от 50 до 250 чел.
+                        </div>
+                        <div class="card__address">
+                            Baznīcas iela 37
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                от 2 000 €<span>/чел</span>
+                            </div>
+                            <div class="card__offers">
+                                1 предложение
+                                <img src="img/phone-icon.svg" alt="phone">
+                            </div>
+                        </div>
+                        <div class="card__more">
+                            <span>Оснащение зала:</span>  Танцпол, Барная стойка, Звуковое оборудование
+                            <br><br>
+                            <span>Курение:</span> Запрещено
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__content">
+                        <img src="img/rest-2.png" alt="restaurant" class="card__img">
+                        <div class="card__name">
+                            Pallazio
+                        </div>
+                        <div class="card__people">
+                            от 50 до 250 чел.
+                        </div>
+                        <div class="card__address">
+                            Baznīcas iela 37
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                от 2 000 €<span>/чел</span>
+                            </div>
+                            <div class="card__offers">
+                                1 предложение
+                                <img src="img/phone-icon.svg" alt="phone">
+                            </div>
+                        </div>
+                        <div class="card__more">
+                            <span>Оснащение зала:</span>  Танцпол, Барная стойка, Звуковое оборудование
+                            <br><br>
+                            <span>Курение:</span> Запрещено
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__content">
+                        <img src="img/rest-3.png" alt="restaurant" class="card__img">
+                        <div class="card__name">
+                            Green Line Restaurant
+                        </div>
+                        <div class="card__people">
+                            от 50 до 250 чел.
+                        </div>
+                        <div class="card__address">
+                            Baznīcas iela 37
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                от 2 000 €<span>/чел</span>
+                            </div>
+                            <div class="card__offers">
+                                1 предложение
+                                <img src="img/phone-icon.svg" alt="phone">
+                            </div>
+                        </div>
+                        <div class="card__more">
+                            <span>Оснащение зала:</span>  Танцпол, Барная стойка, Звуковое оборудование
+                            <br><br>
+                            <span>Курение:</span> Запрещено
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__content">
+                        <img src="img/rest-4.png" alt="restaurant" class="card__img">
+                        <div class="card__name">
+                            Red Tomato
+                        </div>
+                        <div class="card__people">
+                            от 50 до 250 чел.
+                        </div>
+                        <div class="card__address">
+                            Baznīcas iela 37
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                от 2 000 €<span>/чел</span>
+                            </div>
+                            <div class="card__offers">
+                                1 предложение
+                                <img src="img/phone-icon.svg" alt="phone">
+                            </div>
+                        </div>
+                        <div class="card__more">
+                            <span>Оснащение зала:</span>  Танцпол, Барная стойка, Звуковое оборудование
+                            <br><br>
+                            <span>Курение:</span> Запрещено
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__content">
+                        <img src="img/rest-5.png" alt="restaurant" class="card__img">
+                        <div class="card__name">
+                            36.Line 
+                        </div>
+                        <div class="card__people">
+                            от 50 до 250 чел.
+                        </div>
+                        <div class="card__address">
+                            Baznīcas iela 37
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                от 2 000 €<span>/чел</span>
+                            </div>
+                            <div class="card__offers">
+                                1 предложение
+                                <img src="img/phone-icon.svg" alt="phone">
+                            </div>
+                        </div>
+                        <div class="card__more">
+                            <span>Оснащение зала:</span>  Танцпол, Барная стойка, Звуковое оборудование
+                            <br><br>
+                            <span>Курение:</span> Запрещено
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__content">
+                        <img src="img/rest-6.png" alt="restaurant" class="card__img">
+                        <div class="card__name">
+                            April Verdant Restaur...
+                        </div>
+                        <div class="card__people">
+                            от 50 до 250 чел.
+                        </div>
+                        <div class="card__address">
+                            Baznīcas iela 37
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                от 2 000 €<span>/чел</span>
+                            </div>
+                            <div class="card__offers">
+                                1 предложение
+                                <img src="img/phone-icon.svg" alt="phone">
+                            </div>
+                        </div>
+                        <div class="card__more">
+                            <span>Оснащение зала:</span>  Танцпол, Барная стойка, Звуковое оборудование
+                            <br><br>
+                            <span>Курение:</span> Запрещено
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__content">
+                        <img src="img/rest-7.png" alt="restaurant" class="card__img">
+                        <div class="card__name">
+                            Semo de Roma
+                        </div>
+                        <div class="card__people">
+                            от 50 до 250 чел.
+                        </div>
+                        <div class="card__address">
+                            Baznīcas iela 37
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                от 2 000 €<span>/чел</span>
+                            </div>
+                            <div class="card__offers">
+                                1 предложение
+                                <img src="img/phone-icon.svg" alt="phone">
+                            </div>
+                        </div>
+                        <div class="card__more">
+                            <span>Оснащение зала:</span>  Танцпол, Барная стойка, Звуковое оборудование
+                            <br><br>
+                            <span>Курение:</span> Запрещено
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__content">
+                        <img src="img/rest-8.png" alt="restaurant" class="card__img">
+                        <div class="card__name">
+                            Peggy's Bar & Grill
+                        </div>
+                        <div class="card__people">
+                            от 50 до 250 чел.
+                        </div>
+                        <div class="card__address">
+                            Baznīcas iela 37
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__price">
+                                от 2 000 €<span>/чел</span>
+                            </div>
+                            <div class="card__offers">
+                                1 предложение
+                                <img src="img/phone-icon.svg" alt="phone">
+                            </div>
+                        </div>
+                        <div class="card__more">
+                            <span>Оснащение зала:</span>  Танцпол, Барная стойка, Звуковое оборудование
+                            <br><br>
+                            <span>Курение:</span> Запрещено
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="places__btn">
+                Показать еще рестораны
+            </button>
+        </div>
+    </section>
+    <section class="offer" id="offer">
+        <div class="container">
+            <div class="offer__content">
+                <div class="offer__texts">
+                    <h3 class="offer__title">
+                       <b>Оформление шарами</b> ваших мероприятий
+                    </h3>
+                    <p class="offer__text">
+                        под ключ за <span>30 минут</span> от компании с 9-ти летним опытом работы
+                    </p>
+                </div>
+                <img src="img/ballons.png" alt="ballons" class="offer__img">
+                <div class="offer__form">
+                    <button class="offer__btn">
+                        Получить расчет стоимости
+                    </button>
+                    <div class="offer__smtext">
+                        Ответьте на 4 вопроса и получите 5 идей для вашего праздника с расчетом стоимости
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__content">
+                <a href="index.html#header" class="navbar__logo-wrapper">
+                    <img src="img/logo.svg" alt="SPD" class="navbar__logo">
+                    <div class="navbar__current-lang">
+                        lv
+                    </div>
+                </a>
+                <ul class="navbar__menu footer__menu">
+                    <li>
+                        <a href="#" class="footer__link">
+                            Политика конфиденциальности
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Условия сотрудничества
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26 13.079C26 5.85613 20.1793 0 13 0C5.82075 0 0 5.85613 0 13.079C0 19.6076 4.75367 25.018 10.9688 25.9989V16.8599H7.66783V13.0779H10.9688V10.1984C10.9688 6.92098 12.9101 5.10954 15.8795 5.10954C17.3008 5.10954 18.7893 5.36567 18.7893 5.36567V8.5842H17.1492C15.5339 8.5842 15.0302 9.59237 15.0302 10.6267V13.079H18.6355L18.0592 16.861H15.0302V26C21.2463 25.018 26 19.6065 26 13.079Z" fill="#383838"/>
+                        </svg>
+                    </a>
+                    <div class="footer__social">
+                        <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.7253 18.2537C26.6874 19.4677 24.7711 19.9629 21.1115 19.9629H7.82717C4.08384 19.9629 2.13509 19.4357 1.10111 18.1433C0.0930176 16.8832 0.0930176 15.0264 0.0930176 12.4566V7.55856C0.0930176 2.58004 1.28913 0.05229 7.82717 0.05229H21.1116C24.2852 0.05229 26.0437 0.489267 27.1814 1.5606C28.3482 2.65922 28.846 4.45304 28.846 7.55856V12.4566C28.846 15.1667 28.768 17.0344 27.7253 18.2537ZM18.5525 9.33138L12.5201 6.22923C12.3853 6.15988 12.2378 6.12546 12.0905 6.12546C11.9237 6.12546 11.7573 6.16961 11.61 6.25741C11.3324 6.42285 11.163 6.71887 11.163 7.03809V13.2225C11.163 13.5412 11.332 13.8369 11.609 14.0024C11.886 14.168 12.2306 14.1793 12.518 14.0324L18.5504 10.9503C18.8573 10.7935 19.05 10.4817 19.0505 10.1416C19.0509 9.80107 18.859 9.48886 18.5525 9.33138Z" fill="#383838"/>
+                            </svg>                            
+                    </div>
+                    <div class="footer__social">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.8066 0.568115C16.2425 0.568115 16.6712 0.580959 18.0193 0.645177C19.3661 0.709394 20.2829 0.923882 21.0897 1.2424C21.9244 1.56863 22.6275 2.01045 23.3306 2.72327C23.9736 3.36531 24.4712 4.14195 24.7887 4.99915C25.101 5.81728 25.3135 6.74972 25.3767 8.11756C25.4362 9.48669 25.4526 9.92208 25.4526 13.4117C25.4526 16.9013 25.4399 17.3367 25.3767 18.7058C25.3135 20.0736 25.101 21.0048 24.7887 21.8242C24.4721 22.6819 23.9744 23.4587 23.3306 24.1001C22.6982 24.753 21.9336 25.2583 21.0897 25.581C20.2842 25.8982 19.3661 26.114 18.0193 26.1782C16.6712 26.2386 16.2425 26.2552 12.8066 26.2552C9.37071 26.2552 8.94201 26.2424 7.59395 26.1782C6.24715 26.114 5.33032 25.8982 4.5235 25.581C3.67917 25.2592 2.91434 24.7538 2.28264 24.1001C1.63947 23.4582 1.14189 22.6815 0.824558 21.8242C0.510938 21.0061 0.29975 20.0736 0.23652 18.7058C0.177084 17.3367 0.160645 16.9013 0.160645 13.4117C0.160645 9.92208 0.17329 9.48669 0.23652 8.11756C0.29975 6.74844 0.510938 5.81856 0.824558 4.99915C1.14101 4.14143 1.63871 3.36457 2.28264 2.72327C2.91452 2.06983 3.6793 1.56443 4.5235 1.2424C5.33032 0.923882 6.24589 0.709394 7.59395 0.645177C8.94201 0.584812 9.37071 0.568115 12.8066 0.568115ZM12.8066 6.9899C11.1297 6.9899 9.52138 7.66648 8.33559 8.8708C7.1498 10.0751 6.48363 11.7085 6.48363 13.4117C6.48363 15.1148 7.1498 16.7482 8.33559 17.9526C9.52138 19.1569 11.1297 19.8335 12.8066 19.8335C14.4836 19.8335 16.0919 19.1569 17.2776 17.9526C18.4634 16.7482 19.1296 15.1148 19.1296 13.4117C19.1296 11.7085 18.4634 10.0751 17.2776 8.8708C16.0919 7.66648 14.4836 6.9899 12.8066 6.9899ZM21.0265 6.66881C21.0265 6.24302 20.86 5.83467 20.5635 5.53359C20.2671 5.23251 19.865 5.06336 19.4458 5.06336C19.0265 5.06336 18.6244 5.23251 18.328 5.53359C18.0315 5.83467 17.865 6.24302 17.865 6.66881C17.865 7.0946 18.0315 7.50295 18.328 7.80403C18.6244 8.10511 19.0265 8.27425 19.4458 8.27425C19.865 8.27425 20.2671 8.10511 20.5635 7.80403C20.86 7.50295 21.0265 7.0946 21.0265 6.66881ZM12.8066 9.55861C13.8128 9.55861 14.7778 9.96456 15.4892 10.6871C16.2007 11.4097 16.6004 12.3898 16.6004 13.4117C16.6004 14.4336 16.2007 15.4136 15.4892 16.1362C14.7778 16.8588 13.8128 17.2648 12.8066 17.2648C11.8004 17.2648 10.8355 16.8588 10.124 16.1362C9.41253 15.4136 9.01283 14.4336 9.01283 13.4117C9.01283 12.3898 9.41253 11.4097 10.124 10.6871C10.8355 9.96456 11.8004 9.55861 12.8066 9.55861Z" fill="#383838"/>
+                            </svg>                            
+                    </div>
+                    <div class="footer__social">
+                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.1426 0.479397C7.98793 0.580793 5.24008 0.834284 4.71789 0.971169C3.04992 1.42238 1.7419 2.74054 1.32617 4.3933C1.17915 4.98647 0.951006 7.54167 0.83947 9.92956C0.773562 11.2984 0.773562 15.5013 0.83947 16.8752C0.956076 19.3341 1.17408 21.793 1.33124 22.4216C1.73683 24.0693 3.0854 25.4077 4.77366 25.8488C5.30092 25.9857 7.99807 26.2189 10.2694 26.3305C11.6737 26.3964 15.8664 26.3964 17.2404 26.3305C19.6536 26.2138 22.1987 25.9908 22.7817 25.8437C24.4243 25.4331 25.7526 24.1149 26.1988 22.452C26.3052 22.0617 26.4928 20.2112 26.6297 18.2187C26.7007 17.1743 26.7209 16.2516 26.7209 13.4024C26.7209 9.63551 26.6855 8.81926 26.4168 6.00044C26.2495 4.2767 26.1075 3.75957 25.56 2.94333C24.911 1.96992 23.8869 1.23987 22.7766 0.961029C22.1885 0.814005 19.6181 0.585863 17.2657 0.474327C16.0337 0.418558 11.3746 0.418558 10.1426 0.479397ZM16.9615 6.06128C16.9615 6.57333 16.9869 6.9485 17.0376 7.16143C17.2708 8.15512 18.0972 8.96122 19.0858 9.17415C19.2835 9.21471 19.7195 9.24513 20.1454 9.24513H20.8653V10.4872V11.7293H20.3228C19.0858 11.7293 18.1884 11.562 17.4178 11.1818C17.2099 11.0804 17.0224 10.9841 17.0021 10.979C16.9767 10.9689 16.9615 12.2262 16.9615 13.7725C16.9615 15.4607 16.9412 16.7485 16.9058 16.9868C16.5864 19.3594 14.67 21.2251 12.3125 21.4533C11.7802 21.504 10.9994 21.4431 10.4975 21.3113C9.89925 21.1542 9.04752 20.7182 8.59124 20.3379C7.70909 19.6028 7.17676 18.7916 6.84215 17.6864C6.7154 17.2707 6.70019 17.1541 6.70019 16.3682C6.70019 15.694 6.7154 15.4354 6.78638 15.1768C7.34406 13.154 8.6977 11.8105 10.6901 11.3187C10.9994 11.2426 11.3492 11.2072 12.0843 11.1869L13.0578 11.1565V12.4087V13.6559H12.3328C11.4456 13.6559 11.116 13.7116 10.6242 13.9449C9.93981 14.2744 9.37199 14.969 9.20976 15.6838C9.14385 15.9779 9.14385 16.7079 9.20976 17.002C9.42776 17.9399 10.2694 18.746 11.258 18.9539C11.7041 19.0451 11.9272 19.0451 12.3733 18.9539C13.3518 18.746 14.1478 17.9906 14.4013 17.0273C14.4672 16.7637 14.4773 15.9779 14.4773 11.0094V5.29066H15.7194H16.9615V6.06128Z" fill="#383838"/>
+                            </svg>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   <script src="js/main.js"></script>
+</body>
+</html>
