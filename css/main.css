@@ -286,6 +286,38 @@ li {
     margin-right: -15px;
 }
 
+.header__card_wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    left: 12px;
+    bottom: 12px;
+    color: #fff;
+}
+
+.header__card .name {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.header__card .tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.header__card .tag {
+    background: rgba(217, 217, 217, 0.12);
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
 .header__row {
     display: flex;
     flex-wrap: wrap;
@@ -316,9 +348,6 @@ li {
     border-radius: 4px;
     width: 96px;
     height: 96px;
-    position: absolute;
-    left: 12px;
-    bottom: 12px;
 }
 
 .header__logo {
@@ -373,6 +402,7 @@ li {
     font-size: 15px;
     border-radius: 24px;
     margin: auto;
+    cursor: pointer;
 }
 
 .card {
@@ -518,6 +548,7 @@ li {
     font-size: 14px;
     line-height: 54px;
     margin-bottom: 9px;
+    cursor: pointer;
 }
 
 .offer__smtext {
