@@ -17,12 +17,21 @@
         <div class="favorite__quantity">
             2
         </div>
+        <div class="favorite__btn">
+            Сравнить
+        </div>
     </div>
     <div class="hidden">
         <div class="hidden__close">
            <div class="hidden__close-item"></div>
            <div class="hidden__close-item"></div>
         </div>
+        <a href="index.html#header" class="navbar__logo-wrapper">
+            <img src="img/logo.svg" alt="SPD" class="navbar__logo">
+            <div class="navbar__current-lang">
+                lv
+            </div>
+        </a>
         <ul class="hidden__menu">
            <li>
             <a href="#" class="hidden__link">
@@ -40,6 +49,10 @@
             </a>
         </li>
         </ul>
+        <button class="navbar__btn hidden__btn">
+            <img src="img/add-icon.svg" alt="add">
+            Добавить заведение
+        </button>
     </div>
     <div class="navbar" id="navbar">
         <div class="container">
@@ -77,7 +90,7 @@
                         Lv
                     </div>
                 </div>
-                <button class="navbar__btn">
+                <button class="navbar__btn add__btn">
                     <img src="img/add-icon.svg" alt="add">
                     Добавить заведение
                 </button>
@@ -165,54 +178,59 @@
                     Клубный <span>18</span> 
                 </h2>
             </div>
-            <div class="places__filters">
-                <div class="places__filter places__filter_favorite onsm">
-                    <svg width="11" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.875 0.5H13.125C14.1406 0.5 15 1.35938 15 2.375V19.5625C15 20.1094 14.5703 20.5 14.0234 20.5C13.8281 20.5 13.6328 20.4609 13.4766 20.3438L7.5 16.125L1.48438 20.3438C1.32812 20.4609 1.13281 20.5 0.9375 20.5C0.390625 20.5 0 20.1094 0 19.5625V2.375C0 1.35938 0.820312 0.5 1.875 0.5Z" fill="#D02035"/>
-                    </svg>   
-                    Избранные
+            <div class="places__filters_wrap">
+                <div class="places__filters">
+                    <div class="places__filter places__filter_favorite">
+                        <svg width="11" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.875 0.5H13.125C14.1406 0.5 15 1.35938 15 2.375V19.5625C15 20.1094 14.5703 20.5 14.0234 20.5C13.8281 20.5 13.6328 20.4609 13.4766 20.3438L7.5 16.125L1.48438 20.3438C1.32812 20.4609 1.13281 20.5 0.9375 20.5C0.390625 20.5 0 20.1094 0 19.5625V2.375C0 1.35938 0.820312 0.5 1.875 0.5Z" fill="#D02035"/>
+                        </svg>   
+                        Избранные
+                    </div>
+                    <div class="places__filter_wrap">
+                        <select class="places__filter">
+                            <option value="">Вместимость</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </div>
+                    <div class="places__filter_wrap">
+                        <select class="places__filter">
+                            <option value="">Количество людей</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </div>
+                    <div class="break"></div>
+                    <div class="places__filter_wrap">
+                        <select class="places__filter">
+                            <option value="">Ценовая категория</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </div>
+                    <div class="places__filter_wrap">
+                        <select class="places__filter">
+                            <option value="">Кухня</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </div>
+                    <div class="places__filter_wrap">
+                        <select class="places__filter">
+                            <option value="">На природе</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="places__filter_wrap onmd">
-                    <select class="places__filter">
-                        <option value="">Вместимость</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                    </select>
-                </div>
-                <div class="places__filter_wrap onlg">
-                    <select class="places__filter">
-                        <option value="">Количество людей</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                    </select>
-                </div>
-                <div class="places__filter_wrap onmd">
-                    <select class="places__filter">
-                        <option value="">Ценовая категория</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                    </select>
-                </div>
-                <div class="places__filter_wrap onlg">
-                    <select class="places__filter">
-                        <option value="">Кухня</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                    </select>
-                </div>
-                <div class="places__filter_wrap onlg">
-                    <select class="places__filter">
-                        <option value="">На природе</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                    </select>
-                </div>
-                <div class="places__filter more onsm">
-                    <svg width="17" height="4" viewBox="0 0 17 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="2.60938" cy="2" r="2" fill="#999999"/>
-                    <circle cx="8.60938" cy="2" r="2" fill="#999999"/>
-                    <circle cx="14.6094" cy="2" r="2" fill="#999999"/>
-                    </svg>
+                <div class="places__filters_all">
+                    <div class="places__filter more-filter">
+                        <svg width="17" height="4" viewBox="0 0 17 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="2.60938" cy="2" r="2" fill="#999999"/>
+                        <circle cx="8.60938" cy="2" r="2" fill="#999999"/>
+                        <circle cx="14.6094" cy="2" r="2" fill="#999999"/>
+                        </svg>
+                    </div>
                 </div>
                 <div class="places__filter_wrap sort">
                     <select class="places__filter places__sort">
@@ -223,7 +241,7 @@
                 </div>
             </div>
             <div class="places__wrap">
-                <div class="card">
+                <a href="card.html" class="card">
                     <div class="card__content">
                         <img src="img/rest-1.png" alt="restaurant" class="card__img">
                         <div class="card__name">
@@ -250,8 +268,8 @@
                             <span>Курение:</span> Запрещено
                         </div>
                     </div>
-                </div>
-                <div class="card">
+                </a>
+                <a href="card.html" class="card">
                     <div class="card__content">
                         <img src="img/rest-2.png" alt="restaurant" class="card__img">
                         <div class="card__name">
@@ -278,8 +296,8 @@
                             <span>Курение:</span> Запрещено
                         </div>
                     </div>
-                </div>
-                <div class="card">
+                </a>
+                <a href="card.html" class="card">
                     <div class="card__content">
                         <img src="img/rest-3.png" alt="restaurant" class="card__img">
                         <div class="card__name">
@@ -306,8 +324,8 @@
                             <span>Курение:</span> Запрещено
                         </div>
                     </div>
-                </div>
-                <div class="card">
+                </a>
+                <a href="card.html" class="card">
                     <div class="card__content">
                         <img src="img/rest-4.png" alt="restaurant" class="card__img">
                         <div class="card__name">
@@ -334,8 +352,8 @@
                             <span>Курение:</span> Запрещено
                         </div>
                     </div>
-                </div>
-                <div class="card">
+                </a>
+                <a href="card.html" class="card">
                     <div class="card__content">
                         <img src="img/rest-5.png" alt="restaurant" class="card__img">
                         <div class="card__name">
@@ -362,8 +380,8 @@
                             <span>Курение:</span> Запрещено
                         </div>
                     </div>
-                </div>
-                <div class="card">
+                </a>
+                <a href="card.html" class="card">
                     <div class="card__content">
                         <img src="img/rest-6.png" alt="restaurant" class="card__img">
                         <div class="card__name">
@@ -390,8 +408,8 @@
                             <span>Курение:</span> Запрещено
                         </div>
                     </div>
-                </div>
-                <div class="card">
+                </a>
+                <a href="card.html" class="card">
                     <div class="card__content">
                         <img src="img/rest-7.png" alt="restaurant" class="card__img">
                         <div class="card__name">
@@ -418,8 +436,8 @@
                             <span>Курение:</span> Запрещено
                         </div>
                     </div>
-                </div>
-                <div class="card">
+                </a>
+                <a href="card.html" class="card">
                     <div class="card__content">
                         <img src="img/rest-8.png" alt="restaurant" class="card__img">
                         <div class="card__name">
@@ -446,7 +464,7 @@
                             <span>Курение:</span> Запрещено
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <button class="places__btn">
                 Показать еще рестораны
@@ -476,6 +494,33 @@
             </div>
         </div>
     </section>
+    <div class="modal-wrap" id="newLocationModal">
+        <form class="sidebar__form modal" id="modal1">
+            <div class="sidebar__form_header">
+                <img src="img/mail-icon.svg" alt="mail">
+                Добавить свое заведение
+            </div>
+            <div class="sidebar__form_body">
+                <div class="modal__text">
+                    Оставьте свои контактные данные для связи и наш менеджер свяжется с Вами для уточнения деталей и информации по Вашему заведению
+                </div>
+                <!-- <input type="text" class="sidebar__form_input"> -->
+                <input type="text" class="sidebar__form_input" id="placeName" name="fullName" placeholder=" ">
+                <label for="placeName">Название заведения</label>
+                <input type="text" class="sidebar__form_input" id="placeNames" name="fullName" placeholder=" ">
+                <label for="placeNames">Ваше имя и Фамилия</label>
+                <input type="tel" class="sidebar__form_input" id="email" name="tel" placeholder=" ">
+                <label for="tel">Номер телефона</label>
+                <textarea class="sidebar__form_input sidebar__form_textarea" placeholder="Комментарий (опционально)"></textarea>
+                <div class="sidebar__form_privacy">
+                    Нажимая кнопку «Отправить», вы принимаете условия <a href="#">пользовательского соглашения</a> 
+                </div>
+                <button class="sidebar__form_btn">
+                    Связаться с рестораном
+                </button>
+            </div>
+        </form>
+    </div>
     <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__content">

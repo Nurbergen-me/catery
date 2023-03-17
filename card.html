@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6dcadd9149.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Catery</title>
 </head>
@@ -19,12 +23,21 @@
         <div class="favorite__quantity">
             2
         </div>
+        <div class="favorite__btn">
+            Сравнить
+        </div>
     </div>
     <div class="hidden">
         <div class="hidden__close">
            <div class="hidden__close-item"></div>
            <div class="hidden__close-item"></div>
         </div>
+        <a href="index.html#header" class="navbar__logo-wrapper">
+            <img src="img/logo.svg" alt="SPD" class="navbar__logo">
+            <div class="navbar__current-lang">
+                lv
+            </div>
+        </a>
         <ul class="hidden__menu">
            <li>
             <a href="#" class="hidden__link">
@@ -42,6 +55,10 @@
             </a>
         </li>
         </ul>
+        <button class="navbar__btn hidden__btn">
+            <img src="img/add-icon.svg" alt="add">
+            Добавить заведение
+        </button>
     </div>
     <div class="navbar" id="navbar">
         <div class="container">
@@ -79,7 +96,7 @@
                         Lv
                     </div>
                 </div>
-                <button class="navbar__btn">
+                <button class="navbar__btn add__btn">
                     <img src="img/add-icon.svg" alt="add">
                     Добавить заведение
                 </button>
@@ -130,37 +147,37 @@
                     </div>
                     <div class="restaurant__header_menu">
                         <li>
-                            <a href="#" class="restaurant__header_menu_item active">
+                            <a href="#restaurant__body_slider" class="restaurant__header_menu_item active">
                                 Обзор заведения
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="restaurant__header_menu_item">
+                            <a href="#restaurant__body_features" class="restaurant__header_menu_item">
                                 Особенности
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="restaurant__header_menu_item">
+                            <a href="#restaurant__body_menu" class="restaurant__header_menu_item">
                                 Банкетное меню
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="restaurant__header_menu_item">
+                            <a href="#restaurant__body_tour" class="restaurant__header_menu_item">
                                 3D виртуальный тур
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="restaurant__header_menu_item">
+                            <a href="#restaurant__body_reviews" class="restaurant__header_menu_item">
                                 Отзывы
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="restaurant__header_menu_item">
+                            <a href="#restaurant__body_similar" class="restaurant__header_menu_item">
                                 Похожие
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="restaurant__header_menu_item">
+                            <a href="#contacts" class="restaurant__header_menu_item">
                                 Контакты
                             </a>
                         </li>
@@ -178,7 +195,7 @@
         <div class="container">
             <div class="restaurant__body">
                 <div class="restaurant__body_content">
-                    <div class="restaurant__body_slider">
+                    <div class="restaurant__body_slider scrollable" id="restaurant__body_slider">
                         <!-- Slider main container -->
                         <div class="swiper">
                             <!-- Additional required wrapper -->
@@ -202,10 +219,10 @@
                             <div class="swiper-button-next"></div>
                         </div>
                     </div>
-                    <div class="restaurant__body_desc">
+                    <div class="restaurant__body_desc scrollable" id="restaurant__body_desc">
                         Red Tomato — это колоритный семейный ресторан настоящей грузинской кухни от крупнейшего ресторанного холдинга Ginza Project. Атмосфера вечного солнца и летнего настроения в Didi начинается с интерьера. Цветы, сочные пальмы, деревья, растущие прямо посреди зала, стали неотъемлемой частью особенной атмосферы, которая каждый день переносит гостей в солнечную и гостеприимную Грузию. Кирпичные стены, большие окна с деревянными рамами, полки с глиняными кувшинами, посудой и домашними соленьями, удобная мебель, светильники в виде фонариков — в такой обстановке легко почувствовать ... 
                     </div>
-                    <div class="restaurant__body_features">
+                    <div class="restaurant__body_features scrollable" id="restaurant__body_features">
                         <div class="restaurant__body_name">
                             Особенности
                         </div>
@@ -355,7 +372,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="restaurant__body_menu">
+                    <div class="restaurant__body_menu scrollable" id="restaurant__body_menu">
                         <div class="restaurant__body_name">
                             Банкетное меню
                         </div>
@@ -393,7 +410,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="restaurant__body_tour">
+                    <div class="restaurant__body_tour scrollable" id="restaurant__body_tour">
                         <div class="restaurant__body_name">
                             3D виртуальный тур
                         </div>
@@ -401,7 +418,7 @@
                             <iframe allowfullscreen src="panorama.html" width="100%" height="500px"></iframe>
                         </div>
                     </div>
-                    <div class="restaurant__body_reviews">
+                    <div class="restaurant__body_reviews scrollable" id="restaurant__body_reviews">
                         <div class="restaurant__body_name">
                             Отзывы о заведении
                         </div>
@@ -436,12 +453,12 @@
                             </button>
                         </div>
                     </div>
-                    <div class="restaurant__body_similar">
+                    <div class="restaurant__body_similar scrollable" id="restaurant__body_similar">
                         <div class="restaurant__body_name">
                             Похожие заведения
                         </div>
                         <div class="restaurants">
-                            <div class="card">
+                            <a href="card.html" class="card">
                                 <div class="card__content">
                                     <img src="img/rest-1.png" alt="restaurant" class="card__img">
                                     <div class="card__name">
@@ -468,8 +485,8 @@
                                         <span>Курение:</span> Запрещено
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card">
+                            </a>
+                            <a href="card.html"  class="card">
                                 <div class="card__content">
                                     <img src="img/rest-2.png" alt="restaurant" class="card__img">
                                     <div class="card__name">
@@ -496,8 +513,8 @@
                                         <span>Курение:</span> Запрещено
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card">
+                            </a>
+                            <a href="card.html"  class="card">
                                 <div class="card__content">
                                     <img src="img/rest-3.png" alt="restaurant" class="card__img">
                                     <div class="card__name">
@@ -524,7 +541,7 @@
                                         <span>Курение:</span> Запрещено
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -633,16 +650,43 @@
             </div>
         </div>
     </section>
-    <section class="contacts" id="contacts">
+    <section class="contacts scrollable" id="contacts">
         <div class="container">
             <div class="contacts__title">
                 Контактная информация
             </div>
         </div>
         <div class="contacts__map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9bbe80958f57e0c899fc60d7d474abb7ffd8edbb8d5a3ff447ddb2af85a8203a&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+            <div id="map"></div>
         </div>
     </section>
+    <div class="modal-wrap" id="newLocationModal">
+        <form class="sidebar__form modal" id="modal1">
+            <div class="sidebar__form_header">
+                <img src="img/mail-icon.svg" alt="mail">
+                Добавить свое заведение
+            </div>
+            <div class="sidebar__form_body">
+                <div class="modal__text">
+                    Оставьте свои контактные данные для связи и наш менеджер свяжется с Вами для уточнения деталей и информации по Вашему заведению
+                </div>
+                <!-- <input type="text" class="sidebar__form_input"> -->
+                <input type="text" class="sidebar__form_input" id="placeName" name="fullName" placeholder=" ">
+                <label for="placeName">Название заведения</label>
+                <input type="text" class="sidebar__form_input" id="placeNames" name="fullName" placeholder=" ">
+                <label for="placeNames">Ваше имя и Фамилия</label>
+                <input type="tel" class="sidebar__form_input" id="email" name="tel" placeholder=" ">
+                <label for="tel">Номер телефона</label>
+                <textarea class="sidebar__form_input sidebar__form_textarea" placeholder="Комментарий (опционально)"></textarea>
+                <div class="sidebar__form_privacy">
+                    Нажимая кнопку «Отправить», вы принимаете условия <a href="#">пользовательского соглашения</a> 
+                </div>
+                <button class="sidebar__form_btn">
+                    Связаться с рестораном
+                </button>
+            </div>
+        </form>
+    </div>
     <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__content">
