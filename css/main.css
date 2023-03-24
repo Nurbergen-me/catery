@@ -1020,7 +1020,7 @@ select {
 
 .contacts__map {
     border: 1px solid #747474;
-    height: 500px;
+    height: 400px;
     filter: saturate(0.4);
 }
 
